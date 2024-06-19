@@ -130,6 +130,16 @@ header {
   color: white;
 }
 
+.navbar-toggler {
+  display: none;
+  /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
 .nav-links {
   list-style: none;
   padding: 0;
@@ -151,9 +161,42 @@ header {
   color: #ddd;
 }
 
-
 .site-navbar-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: block;
+    /* Only show on mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-links li {
+    margin: 1px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1404,4 +1447,48 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.footer-section {
+  background-color: #f9cc0b;
+  text-align: center;
+  padding: 120px 20px;
+  color: black;
+}
+
+.footer-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section .logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-section .social-icons {
+  margin-bottom: 20px;
+}
+
+.footer-section .social-icons a {
+  font-size: 24px;
+  color: black;
+  /* Adjust the icon color if needed */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-section .social-icons a:hover {
+  color: #555;
+  /* Adjust the hover color if needed */
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: black;
 }

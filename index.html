@@ -37,21 +37,17 @@
 <body class="index-page">
 
   <header id="home">
-    <div class="container">
-      <div class="contact-info">
-        <span class="email">✉ rizwanalam1192@gmail.com</span>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
     <div class="border-bottom"></div>
     <div class="container">
       <nav class="navbar">
-        <div class="brand"><a href="index.html">BRAND</a></div>
+        <div class="brand">
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="Brand Logo" class="logo" height="30px">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -70,7 +66,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/Website Banner New 1.2.jpg" alt data-aos="fade-in" class>
+      <img src="assets/img/1.jpg" alt data-aos="fade-in" class>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Rizwan Alam</h2>
@@ -119,7 +115,6 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i><strong>Birthday:</strong> <span>10<sup>th</sup> October</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i><strong>Phone:</strong> <span>+880 1846661287</span></li>
                   <li><i class="bi bi-chevron-right"></i><strong>City:</strong> <span>Dhaka, Bangladesh</span></li>
                 </ul>
               </div>
@@ -356,7 +351,6 @@
                   organizational excellence.</em></p>
               <ul>
                 <li>Makki Masjid Goli, West Rampura, Dhaka - 1219</li>
-                <li>+880 1846661287</li>
                 <li>rizwanalam1192@gmail.com</li>
               </ul>
             </div>
@@ -918,14 +912,6 @@
                 </div>
               </div>
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+880 1846661287</p>
-                </div>
-              </div>
-
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
@@ -987,7 +973,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <!-- <footer id="footer" class="footer position-relative">
 
     <div class="container">
       <div class="copyright text-center ">
@@ -996,6 +982,22 @@
       </div>
     </div>
 
+  </footer> -->
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo">
+      </div>
+      <h2>Follow Me</h2>
+      <div class="social-icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-dribbble"></a>
+        <a href="#" class="fab fa-behance"></a>
+      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">RIZWAN ALAM</strong> <span>All RightsReserved</span>
+    </div>
   </footer>
 
   <!-- Scroll Top -->
@@ -1019,6 +1021,17 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggler = document.querySelector('.navbar-toggler');
+      const navLinks = document.querySelector('.nav-links');
+
+      toggler.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
 
 </body>
 
